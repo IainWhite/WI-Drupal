@@ -1,0 +1,39 @@
+.webform-client-form{
+	.form-item{
+		.form-type-radio{
+			input{
+				margin: 0 3px 0 0;
+			}
+		}
+		.form-type-checkbox{
+			input{
+				margin: 0 3px 0 0;
+			}
+		}
+		.form-managed-file{
+			input.form-submit{
+				margin-top: 10px;
+			}
+		}
+		&.horizontal{
+			.form-type-checkbox,.form-type-radio{
+				display: inline-block;
+				margin-right:20px;
+			}
+		}
+		label{
+			display: block;
+		}
+		input[type="text"],input[type="email"], input[type="password"], select, .uneditable-input {
+			width: auto;
+		}
+		&.webform-container-inline{
+			label{
+				vertical-align: top;
+				display: inline-block;
+    			margin-top: 9px;
+    			min-width: 130px;
+			}
+		}
+	}
+}

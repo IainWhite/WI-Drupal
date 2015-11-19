@@ -1,0 +1,107 @@
+#section-top{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    height:40px;
+}
+.region-top-left{
+    line-height: 40px;
+}
+body.ltr{
+    .region-top-right{
+        float: right;
+        width: auto;
+        .search-form-block-wrapper{
+            right:33px;
+        }
+    }
+}
+body.rtl{
+    .region-top-right{
+        .search-form-block-wrapper{
+            right:33px;
+        }
+    }
+}
+.region-top-right{
+    margin-top: 6px;
+    line-height: 28px;
+    .block{
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.3);
+        padding: 0 10px;
+        float: left;
+        position: relative;
+    }
+    ul.menu{
+        margin:0;
+        padding:0;
+        li{
+            display: inline-block;
+            margin: 0;
+            padding:0;
+            a{
+                color: #fff;
+            }
+            &:not(.first){
+                margin-left: 5px;
+                &:before{
+                    content: "/";
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .fa-search.search-toggle{
+        cursor: pointer;
+    }
+    .search-form-block-wrapper{
+        .transition(width,0.3s);
+        width: 0px;
+        overflow: hidden;
+        &.open{
+            width: 282px;
+        }
+        .form-item{
+            margin: 0;
+        }
+        input[type=text]{
+            line-height: 20px;
+            padding: 0 10px;
+            color: @text_color;
+            border: none;
+            padding: 0 10px;
+            margin: -2px 0 0 0;
+            height: 28px;
+            border-radius: 0;
+            &:focus{
+                -webkit-appearance: none;
+                border: none !important;
+                color: @text_color !important;
+            }
+        }
+        position: absolute;
+        top:0;
+    }
+    .block-search:hover{
+        .search-form-block-wrapper{
+            width:282px;
+        }
+    }
+}
+img.language-icon {
+    height:12px;
+}
+/*	################################################################
+	BLOCK CART AT RIGHT TOP 
+################################################################# */
+#block-views-simple-shopping-cart-block {
+    p {
+        margin:0;
+        font-size:12px;
+    }
+    a {
+       color: #FFF;
+    }
+}
+
+

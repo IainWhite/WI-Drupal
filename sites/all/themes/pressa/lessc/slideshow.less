@@ -1,0 +1,146 @@
+/************************************************************
+    CAROUSEL PAGING AND CONTROL PRESSA STYLE
+************************************************************/
+.carousel-indicators {
+    bottom: -20px;
+    li {
+        border-color: @base_color;
+        background-color: #FFF;
+        width: 12px;
+        height:12px;
+        &.active {
+            background-color: @base_color;
+        }
+    }
+}
+
+div.carousel.slide {
+  .carousel-control{
+    text-shadow: white;
+    z-index:99;
+    font-size: 28px;
+    span{
+      top:50%;
+      position: absolute;
+      width: 40px;
+      height: 60px;
+      line-height: 60px;
+      margin-top: -30px;
+      text-align: center;
+      background-color:@base_color; 
+      color: #fff;
+      opacity:0;
+      .transition(all,0.1s);
+    }
+    &.right{
+      background: none;
+      span{
+        right:0;
+      }
+      &:hover{
+        span{
+          opacity:1;
+          right: 20px;
+        }
+      }
+    }
+    &.left{
+      background: none;
+      span{
+        left:0;
+      }
+      &:hover{
+        span{
+          opacity:1;
+          left: 20px;
+        }
+      }
+    }
+  }
+  &:hover{
+    .right{
+      span{
+          opacity:1;
+          right: 20px;
+        }
+      
+    }
+    .left{
+      span{
+          opacity:1;
+          left: 20px;
+        }
+    }
+  }
+}
+.bx-wrapper .bx-viewport {
+    border: none !important;
+    box-shadow: 0;
+    left: 0px !important;
+}
+.bx-wrapper{
+    .bx-controls-direction{
+        a{
+            background: none;
+            text-indent: 0;
+            top:50%;
+            margin: 0;
+            width: 40px;
+            height: 40px;
+            color: transparent;
+            z-index: 1;
+            margin-top: -20px;
+            .transition(all, 0.3s, ease);
+            i{
+                .middle-center();
+            }
+            &.bx-prev{
+                left: 0;
+            }
+            &.bx-next{
+                right: 0;
+            }
+        }
+    }
+    &:hover{
+        .bx-controls-direction{
+            a{
+                background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.block-dexp-layerslider{
+    .title{
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+    }
+    .bg-color{
+        padding:10px;
+    }
+    .title2{
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 18px;
+        color: #fff;
+        line-height: 26px;
+    }
+    .title3{
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 24px;
+        color: #fff;
+        line-height: 30px;
+        font-weight: 300;
+    }
+    .title4{
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 58px;
+        color: #fff;
+        line-height: 60px;
+        font-weight: 800;
+    }
+}

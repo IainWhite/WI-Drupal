@@ -1,0 +1,32 @@
+#section-bottom {
+  .block-title {
+    font-size:18px;
+    font-weight:600;
+    color: #FFF;
+    margin-bottom:48px;
+    &:before {
+      display:block;
+      content:"";
+      height:2px;
+      width:100px;
+      background: @base_color;
+      position: absolute;
+      top:45px;
+    }
+  }
+}
+.region-left-sidebar, .region-right-sidebar {
+    .block {
+        border-top: 1px solid #EFEFEF;
+        margin-bottom:30px;
+        &:first-child {
+          border-top: 0 none;
+          h2.block-title {
+            margin:0;
+          }
+        }
+        h2.block-title {
+          margin-top:40px;
+        }
+    }
+}

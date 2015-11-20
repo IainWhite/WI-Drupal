@@ -1,0 +1,1283 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Pressa - MultiPurpose, Commerce Drupal Theme</title>
+	<meta name="description" content="">
+	<meta name="author" content="DrupalExp">
+	<meta name="copyright" content="DrupalExp">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-07-21">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		#documenter_logo img {
+			width:100px;
+			margin-top:50px;
+		}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+		ul.line30 li {line-height:30px;}
+	</style>
+	
+</head>
+<body class="documenter-project-Pressa">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"><img style='text-align:center;padding-left:50px' src="assets/images/logo.png">
+		</a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">INTRODUCTION</a></li>
+			<li><a href="#introduction" title="Introduction">OVERVIEW</a></li>
+			<li><a href="#installation" title="Installation">INSTALLATION</a>
+				<ul>
+					<li><a href="#full_install" title="Full Installation">1. Full Installation</a></li>
+					<li><a href="#profile_install" title="Profile Installation">2. Profile Installation</a></li>
+					<li><a href="#manual_install" title="Manual Installation">3. Manual Installation</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#theme_seting" title="Theme Seting">Pressa THEME SETTINGS</a>
+				<ul>
+					<li><a href="#layout-settings" title="Layout Settings">1. Layout Settings</a></li>
+					<li><a href="#preset-settings" title="Preset Settings">2. Preset Settings</a></li>
+					<li><a href="#other-settings" title="Other Settings">3. Other Settings</a></li>
+				</ul>
+			</li>
+			<li><a href="#page_settings" title="Page Settings">PAGE SETTINGS</a>
+				<ul>
+					<li><a href="#animation-settings" title="Other Settings">1. Animation Settings</a></li>
+					<li><a href="#title-settings" title="Other Settings">2. Title Settings</a></li>
+				</ul>
+			</li>
+			<li><a href="#css_adjustments" title="CSS & Adjustments">CSS & ADJUSTMENTS</a>
+				<ul>
+					<li><a href="#override_css" title="Override_css">1. How to override css</a></li>
+					<li><a href="#classes_css" title="classes_css">2. Css classes using in Pressa theme</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="#modules" title="FLAGS AND SOCIAL SHARE MODULES">FLAGS AND SOCIAL SHARE MODULES</a>
+				<ul>
+					<li><a href="#flag_module" title="Flag Module">1. Flags Module</a></li>
+					<li><a href="#social_share_module" title="Social Share module">2. Social Share module</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="#menu_configuration" title="Mega Menu configuration">MEGA MENU CONFIGURATION</a>
+				<ul>
+					<li><a href="#dexp_menu" title="Dexp Menu">1. dexp_menu module</a></li>
+					<li><a href="#using_mega_menu" title="Using meta menu">2. How to create a mega menu</a></li>
+				</ul>
+			</li>
+			<li><a href="#slider_configuration" title="Slider configuration">SLIDER CONFIGURATION</a>
+				<ul>
+					<li><a href="#make_slider" title="Make Slider">1. Make and export Layer sliders</a></li>
+					<li><a href="#import_slide" title="Import Slide">2. Import Slides</a></li>
+				</ul>
+			</li>
+			<li><a href="#using_shortcodes" title="Using Shortcodes">Pressa SHORTCODES</a>
+				<ul>
+					<li><a href="#enable_shortcode" title="Enable Shortcode">1. Enable Shortcode</a></li>
+					<li><a href="#accordion" title="Accordion">2. Accordion</a></li>
+					<li><a href="#tabs" title="Tabs">3. Tabs</a></li>
+					<li><a href="#box" title="Box">4. Box</a></li>
+					<li><a href="#piechart" title="Pie Chart">5. Pie Chart</a></li>
+					<li><a href="#skillbar" title="Skill bar">6. Skill bar</a></li>
+					<li><a href="#carousels" title="Carousels">7. Carousels</a></li>
+					<li><a href="#icons" title="Icons">8. Icons</a></li>
+					<li><a href="#button" title="Buttons">9. Buttons</a></li>
+					<li><a href="#stats" title="Stats">10. Stats</a></li>
+					<li><a href="#columns" title="Column layout">11. Column layout</a></li>
+					<li><a href="#bxslider" title="Bx Slider">12. Bx Slider</a></li>
+					<li><a href="#map" title="Map">13. Map</a></li>
+					<li><a href="#testimonials" title="Testimonials">14. Testimonials</a></li>
+					<li><a href="#social" title="Social">15. Social</a></li>
+					<li><a href="#title" title="Title">15. Title</a></li>
+					<li><a href="#media" title="Media">17. Media</a></li>
+					<li><a href="#flipbox" title="Media">18. Flipbox</a></li>
+				</ul>
+			</li>
+			<li><a href="#block_configuration" title="Block Configuration">DRUPALEXP BLOCK CONFIGURATION</a></li>
+			<li><a href="#blog_configuration" title="Blog Configuration">BLOG</a>
+				<ul>
+					<li><a href="#blog_fields" title="Blog Fields">1. Blog Fields</a></li>
+					<li><a href="#blog_display" title="Blog Display">2. Blog Display</a></li>
+					<li><a href="#blog_categories" title="Blog Categories">3. Manage Blog Categories</a></li>
+					<li><a href="#blog_widgets" title="Blog Widgets">4. Blog Widgets</a></li>
+				</ul>
+			</li>
+			<li><a href="#portfolio_configuration" title="Portfolio configuration">DRUPALEXP PORTFOLIO</a>
+				<ul>
+					<li><a href="#portfolio_display" title="Portfolio Displays">1. Portfolio display</a></li>
+					<li><a href="#portfolio_categories" title="Portfolio Categories">2. Manage Portfolio categories</a></li>
+					<li><a href="#portfolio_color_config" title="Portfolio Color configugration">3. Configure color hover </a></li>
+					<li><a href="#portfolio_sort" title="Portfolio Sort">4. Portfolio Sort</a></li>
+				</ul>
+			</li>
+			<li><a href="#drupal_commerce" title="Drupal Commerce">DRUPAL COMMERCE</a>
+				<ul>
+					<li><a href="#commerce_modules" title="Commerce Modules Required">Commerce modules</a></li>
+					<li><a href="#Orane_shop" title="Pressa Shop">Pressa Product Structure</a></li>
+					<li><a href="#widget_product" title="Widgets Product">Widgets Product</a></li>
+				</ul>
+			</li>
+			<li><a href="#thank_you" title="Portfolio configuration">THANK YOU</a></li>
+		</ul>
+		<div id="documenter_copyright">Copyright DrupalExp 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+		<!-- Section  document cover -->
+		<section id="documenter_cover">
+		<h1>Pressa - Multi-purpose Commerce Theme</h1>
+		<div id="documenter_buttons"></div>
+		<hr>
+		<ul>
+			<li>Created: 12/15/2014</li>
+			<li>Latest update: 12/16/2014</li>
+			<li>By: DrupalExp</li>
+		</ul>
+		<p>Thank you for purchasing the theme, If you have questions please submit your ticket to <a href="http://themesvision.com/forum">support forum</a></p>
+	</section>
+		<!-- Section  introduction -->
+		<section id="introduction">
+		<div class="page-header"><h3>Overview</h3><hr class="notop"></div>
+		<p>
+			The Pressa template is a custom design multi-functional website template and this template powerful solution for displaying artwork. The Pressa template features a fully responsive framework that looks fantastic on any mobile device and retina display ready for high-quality resolution graphics. If you are looking professional  website template for Drupal projects, the PRESSA ideal for you!
+		</p>
+		<p>			
+			Drupal commerce are included which is easy to use for online store. It’s the best way to start your business and showcase your projects or sell your products. The theme consists of well-organized files and it’s easy to modify and customize whatever you want.
+		</p>
+		
+		<p>
+			Feel free to visit our&nbsp;<a href="http://themesvision.com/forum">support forum</a> if you need any support for the theme that cannot be found in this documentation.
+		</p>
+	</section>
+		<!-- Section  install -->
+		<section id="installation">
+		<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+		<section id="full_install">
+		<h6><strong>1. Full installation</strong></h6>
+		<p>
+			The quickstart package came with theme helps you to build a copy of our live demo at <a href="http://demo.themesvision.com/#Pressa">http://demo.themesvision.com/#Pressa</a>. It is the highly&nbsp;recommended way for newbies or if you don&rsquo;t want to go through the individual setup of each module and theme.</p>
+		<p>	STEPS to do:</p>
+		<ol>
+			<li>Create a new database in your phpmyadmin/cPanel tools and create database user.</li>
+			<li>Import the supplied database.sql.zip file (located in Packages folder in your package) into this database.</li>
+			<li>Upload the &quot;demo&quot; folder to your server. In most cases you will unpack it under the public_html folder, www root folder (windows hosting) or the root folder of your server.</li>
+			<li>Change the database info in sites/default/settings.php to match the database name, user and password for your new created database.</li>
+			<li>Done. You can login to manage site folow url: http://domain.com/user with the default admin account is: username: admin, password: admin.</li>
+		</ol>
+		</section>
+		<section id="profile_install">
+			<h6><strong>2. Profile installation</strong></h6>
+			<p>
+				We provide 2 profiles are <b>drupalexp_pressa</b> (without integrate Drupal commerce) and <b>drupalexp_pressa_commerce</b> (integrate Drupal commerce) which are used to quickly install new sites with the Pressa theme. These profiles will install all required modules, create content type, views, fields ... and setup the Pressa theme as the default them. 
+			</p>
+			<p>
+				NOTE: Profile installation NOT import database such as demo, so all content are NOT available.
+			</p>
+			<p>STEPS to do:</p>
+			<ol>
+				<li>Create a new database in your phpmyadmin/cPanel tools and create database user.</li>
+				<li>Download the latest version of Drupal 7 from Drupal.org and upload to your server.</li>
+				<li>Copy the <b>drupalexp_pressa</b> or <b>drupalexp_pressa_commerce</b> profile folder located in the package (packages/profiles) into your sites profiles folder.</li>
+				<li>Install your drupal site normally, the <b>drupalexp_pressa</b> or <b>drupalexp_pressa_commerce</b> profile will auto load as default.</li>
+			</ol>
+		</section>
+		<section id = "manual_install">
+			<h6>
+				<strong>3. Manual Installation</strong>
+			<h6>
+			<p>
+				The following explains how to install the theme with existing sites. In order to do this there are several steps that must be completed.
+			</p>
+			<ol>
+				<li>
+					Copy both the <strong>Pressa</strong> and <strong>drupalexp</strong> themes (located in package at Packages/themes) into your sites theme directory (sites/all/themes)..</li>
+				<li>
+					Install and enable <strong>jquery_update</strong> module and change jQuery version to 1.7
+				</li>
+				<li>
+					Enable the <strong>Pressa</strong> theme from Appearance menu.
+				</li>
+				<li>
+					Copy modules from sub folders contrib and drupalexp module at Packages/modules to sites/all/modules and enable modules you want to use
+				</li>
+				<li>
+					Copy libraries from Packages/libraries to sites/all/libraries.
+				</li>
+			</ol>
+		<p>
+			NOTE: You MUST enable module 
+			<b>dexp_pressa </b>(if you don't want integrated Drupal Commerce) or enable <b>dexp_pressa_commerce </b>(integrated Drupal commerce), system will create new content type, fields and views for you.
+		</p>
+		</section>
+	</section>
+		<!-- Section  theme settings -->
+		<section id="theme_seting">
+	<div class="page-header"><h3>Theme Settings</h3><hr class="notop"></div>
+	<p>
+	Pressa theme provides many settings which help you control your site very easily. By access to <strong>Appearance</strong> <strong>&#65515;</strong> <strong>Settings</strong> <strong>&#65515;</strong> <strong>Pressa</strong> you can see settings as below: 
+	</p>
+	<p>NOTE: You SHOULD reference to <a href="http://themesvision.com/forum/what-drupalexp-framework-and-how-it-works">Drupalexp Framework</a> when reading this section to understand clearly.</p>
+	<section id="layout-settings"><h4> 1. Layout Settings</h4>	
+		<p>
+		Pressa sub theme extends from <strong>Drupalexp framework</strong> provides the ability to build any responsive layout you can think of by using simple actions such as <strong>Drag &amp; Drop </strong> elements on UI. It also supports to create <strong>multiple layouts</strong>, so you can show your pages with different shapes very easily.</p>
+		<p align="center">
+				<img alt="" src="assets/images/Pressa-layout.png"/><br/>
+				Figure : <strong>Sample layout in Pressa theme </strong>
+		</p>
+		<p>
+		Top, Header, Page Title... with gray background called <strong>sections</strong>. Elements in each of section and unassigned area called <strong>regions</strong>.</p>
+		<p>Using this framework you can move to change the order of sections and regions, set the widths of individual block regions or remove from the site layout.</p>
+		<h5><strong>Pressa theme can be easily expanded by custom the layout such as</strong></h5>
+		<ol style="list-style-type:lower-alpha;">
+			<li>
+				<strong>Add a new layout</strong></li>
+		</ol>
+		<p>
+			In Pressa theme, you can build unlimited layouts. To create a new layout, click on <strong>Add layout</strong> link, the system will create a copy of Default layout that.</p>
+		<p>
+			You can customize on this layout to get layout which you like by</p>
+		<ul>
+			<li>
+				Adding/Removing sections, regions.</li>
+			<li>
+				Changing the order of them.</li>
+		</ul>
+		<ol style="list-style-type:lower-alpha;">
+			<li value="2">
+				<strong>Clone a layout</strong></li>
+		</ol>
+		<p>
+			To clone a layout, click on the name of layout which you want to duplicate. After that, click on <strong>clone </strong>icon to create a duplicate of layout was chosen.</p>
+		<ol style="list-style-type:lower-alpha;">
+			<li value="3">
+				<strong>Remove a layout</strong></li>
+		</ol>
+		<p>
+			To remove a layout, click on the name of the layout which you want to clone (except default layout). After that, click on <strong>delete</strong> icon to remove this layout from Pressa theme.</p>
+			
+		<ol style="list-style-type:lower-alpha;">
+			<li value="4">
+				<strong>Assign content to new layout</strong></li>
+		</ol>
+		<div style="width:50%;float:left">
+			<p>
+			When you create a new layout, you can set pages will be display with this layout by inputting path to <strong>Pages Assignment</strong> textarea at bottom layout. 
+			</p>
+		</div>
+		<div style="width:50%;float:left; margin-top:-10px;">
+			<img src="assets/images/assign-layout.png"/>
+		</div>
+		<div style="clear:both"/>
+	
+		<!-- Section Settings-->	
+		<h5><strong>Section settings</strong></h5>
+		<div id="section-setting">
+			<div style="width:50%;float:left;">
+				<div style="padding-right:10px;">
+				<p>You can re-order sections or move regions in section to other sections. Ex: If you want banner section to appear above header section, you can drag the banner section above the header and save the settings. Saving these settings will automatically apply these changes when you view the front end of your site. Additional, you can customised through:</p>
+				<ul class='line30'>
+					<li><strong>Full Width:</strong> this setting provides the ability to make sections into a full width responsive layout, so that the content will be the full width of the browser. It is usually use in cases show slider full width or region have full width background .</li>
+					<li><strong>Visible:</strong> this setting provides visibility section based on the browser size</li>
+					<li><strong>Background color:</strong> this setting provides the ability to use color code to set individual sections with a background colour which applied to them, without requiring any use of CSS.</li>
+					<li><strong>Stick on top:</strong> this setting make the section stick to the top of the screen permanently per page </li>
+					<li><strong>Custom class:</strong> this setting allows user apply owner class to style section </li>
+					<li><strong>Custom column padding:</strong> this setting allows user set again padding of columns in section. Default, each columns in section padding 15px. You can set to 0 (no padding). </li>
+				</ul>
+				</div>
+			</div>
+			<div style="width:50%;float:left;">
+				<img src="assets/images/section-settings.png" />
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<!-- Region Settings-->	
+		<h5><strong>Region settings</strong></h5>
+		<div id="region-setting">
+			<div style="width:50%;float:left;">
+			<div style="padding-right:10px;">
+				<p>
+					Similar to sections, you can use the same arrows per region to change the order at which they are rendered within each of section or move them to another sections.
+				</p>
+				<p>	
+					By clicking the gears icon on each region you can set width to each region on different devices.
+				</p>
+				<p>
+					Based on Twitter Bootstraps 3.x with 12 columns system, you can specify the width of each region. All regions within each section of the theme should add up to 12 cols.
+				</p>
+				<ul class='line30'>
+					<li>
+						6 columns in large device (a haft width of section)</li>
+					<li>
+						6 columns to medium device (a haft width of section)</li>
+					<li>
+						6 columns to small device (a haft width of section)</li>
+					<li>
+						12  columns to very small device section (full width section)
+					</li>
+				</ul>
+			</div>
+			</div>
+			
+			<div style="width:50%;float:left;">
+				<img src="assets/images/region-settings.png" />
+			</div>
+			<div style="clear:both"></div>
+		</div>
+	</section>
+<section id="preset-settings">
+	<h4>2. Presets Settings</h4>
+
+	<p>To set default color for the theme by clicking on <strong>Presets</strong> vertical tab at the left side and choose color in dropdown labeled <strong>Default preset</strong></p>
+<p>The <strong>Preset settings</strong> provide the functionality to create your own colors so that you can have full control over the color scheme of your website.</p>
+<p align="center"><img src="assets/images/preset-settings.png"/></p>
+</section>
+<section id="other-settings">
+	<h4>3. Other Settings</h4>
+	<div style="width:50%;float:left;">
+	The Other setting under <strong>Basic</strong> tab allow you setting the layout, direction, set Google Analytic code and Custom background site at here.
+	<div>
+		<h6>
+			<strong>1. Boxed or Wide (Full width)</strong>
+		</h6>
+		The layout style allows the site will be a boxed layout centred in the browser or wide (full width).
+		The wide is default layout site.
+	</div>
+	<div>
+		<h6>
+			<strong>2. Direction of site</strong>
+		</h6>
+		<p>The direction allows the theme to display with different reading style. 
+		</p>
+		- Default (current language direction). Ex: English has default direction LTF while Arabic has RTL default <br/>
+		- LTR refers to 'left to right' reading <br/>
+		- RTL refers to 'right to left'.
+	</div>
+	<div>
+		<h6>
+			<strong>3. Google Analytics </strong>
+		</h6>
+		Add your GA code to tracking your site quickly. Just paste your code without script tag here.
+	</div>
+	<div>
+		<h6>
+			<strong>4. Customize background site </strong>
+		</h6>
+		<p>It is ONLY use in layout <strong>boxed</strong> and no effect in <strong>Wide</strong>. You should create class(es) for your background site and put it into text Custom HTML Classes field. You can define more your owner classes to custom background image site which you think.</p>
+		<p>Pressa theme support 8 background images with class from bg1->bg8. You can see how background show in Quick setting demo site</p>
+	</div>
+	</div>
+	<div style="width:50%;float:left;margin-top:-10px;">
+		<img src='assets/images/other-settings.png'/>
+	</div>
+	<div style="clear:both;"></div>
+
+	
+</section>
+</section>
+		<!-- Section  Page settings -->
+		<section id="page_settings">
+
+	<div class="page-header"><h3>Page Settings</h3><hr class="notop"></div>
+	
+	<section id="animation-settings"><h4>Animation Setting</h4>
+	<div>
+		<div style="width:50%;float:left;"> By accessing to <strong>DrupalExp &#65515;  Animation Settings </strong>menu, you can: 
+		<p><strong>Enable</strong> </p>
+		<p><strong>Disable</strong></p> 
+		<p>animation effect on specific pages by inputting Drupal paths to Pages textarea.</p>
+		<p><strong>Note:</strong> We can use wildcard character such as * in path</p>
+		</div>
+		
+		<div style='width:50%;float:left;margin-top:-10px;'>
+		<img src='assets/images/animation-settings.png'/>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	</section>
+	<section id="title-settings"><h4>Page Title Setting</h4>
+	<div>
+		<p style="width:50%;float:left;"> By accessing to <strong>DrupalExp &#65515;  Page Settings </strong>menu, you can configure sub title page by putting a split character to split between title and sub-title. We use "~" character such as default. You can modify to any character which you like.</p>
+		<p style='width:50%;float:left;'>
+		<img src='assets/images/page-title-settings.png'/><br/>
+		</p>
+		<div style="clear:both"></div>
+	</div>
+	</section>
+</section>
+		<!-- Section CSS -->
+		<section id="css_adjustments">
+			<div class="page-header">
+				<h3>CSS & Adjustments</h3>
+				<hr class="notop">
+			</div>
+			<p>
+			Drupalexp framework are using lessc to compile css file, so all stylesheet wrote in *.less files (/sites/all/themes/Pressa/lessc folder) and compile to css file automatically. If you want to override style of theme, please read section <b>How to override CSS</b>. 
+			</p>
+			<section id="override_css">
+				<h4>1. How to override CSS</h4>
+				<p>
+				We have created a blank style file called <b>custom.less</b> (/sites/all/themes/Pressa/assets/less) to help customer override CSS easily. You just put your normal stylesheet or less here to override theme style. 
+				</p>
+				<p>
+					NOTE: Don't change the other less files. When the theme has a new version, you can update it without losing your changes.
+				</p>
+			</section>
+			
+			<section id="classes_css">
+				<h4>2. CSS classes using in Pressa theme</h4>
+				<h6>a. Block classes </h6>
+				Enable block_class module, text field called <b>CSS class(es)</b> is available when you creating or modifing a block. It helps us to put any class(es) to wrapper block before rendering.</p>
+				<p>There are some block classes is using to style <b>background</b> for block in Pressa theme as below:</p>
+				<ul class="line30">
+					<li>dark-bg</li>
+					<li>gray-bg</li>
+					<li>bg-color</li>
+					<li>bottom-shadow</li>
+					<li>block-shadow</li>
+					<li>dark-over</li>
+				</ul>
+				<p>Just put class into <b>CSS class(es)</b> text field you will have block styled</p>
+				NOTE: 
+				<p>
+				You can reference to block.less file to see style classes above.
+				</p>
+				<h6>b. Custom block content class</h6>
+				<p>- This option helps user put any custom class(es) to <b>block content</b> before rendering. </p>
+				<p>- When creating or modifing a block click on DRUPALEXP BLOCK SETTINGS >> BLOCK CUSTOM STYLE  and put your custom block class to <b>Custom block content class</b> text field.</p>
+				<p>- With section full width, in Pressa theme, you just put <b>.container</b> class to text field above to align block content to box container.  </p>
+				<h6>c. Box layout background classes</h6>
+				<p>In box layout mode, you can using classes as below to style background body</p>
+				<ul class="line30">
+					<li>bg1</li>
+					<li>bg2</li>
+					<li>bg3</li>
+					<li>bg4</li> 
+					<li>bg5</li>
+					<li>bg6</li>
+					<li>bg7</li>
+					<li>bg8</li>
+				</ul>
+				NOTE: <p>You can reference to style.less file to see style classes above.</p>
+			</section>
+</section>
+		<section id="modules">
+			<div class="page-header"><h3>Flags and Social Share module</h3><hr class="notop"></div>
+			<section id="flag_module">
+				<h5><strong>1. Flags Module</strong></h5>
+				<p>
+				Pressa theme is using Flags module to:
+				<ul class="line30">
+					<li>Like a blog post </li>
+					<li>Add product to wishlist </li>
+				</ul>
+				</p>
+				<p>
+				If you want a anonymous user can like or add product to wishlist, go to http://yoursiteurl.com/admin/structure/flags  and assign access permission to anonymous user and authenticated user.
+				
+				</p>
+				<div style='text-align:center;'>
+					<img src='assets/images/flag-access.png'/>
+				</div>
+			</section>
+			<section id="social_share_module">
+				<h5><strong>2. Social Share Module</strong></h5>
+				<p>Pressa theme is using <b>social-share</b> module to share a post to social network.</p>
+				<p>When enabling this module, a tab item called Social Share will display on any content type. For example, configure this module for blog post using content type Article, you access to http://yoursiteurl.com admin/structure/types/manage/article and check on Enable Social Share. At Social Networks link, choose social network which you want to use.</p>
+				<div style='text-align:center;'>
+					<img src='assets/images/social-share.png'/>
+				</div>
+				<p>
+					We are not use available social icons from the module, so choose Unstyle Link on Display Format. And all owner stylesheet for icons put at blog.less file. You can add more style for new icons if needed. 
+				</p>
+			</section>
+		</section>
+		
+		</section>
+		<!-- Section menu -->
+		<section id="menu_configuration">
+	<div class="page-header"><h3>Mega Menu configuration</h3><hr class="notop"></div>
+	
+	<section id="dexp_menu">
+		<h6><strong>1. dexp_menu module</strong></h6>
+		<p>
+			There are many mega module such as TB mega menu... it can be integrated with Pressa theme. BUT, it's using Bootraps2.x. So, it will make some configurations to make it works and specially system must load both boostrap 2.x and 3.x. It's a cause heavy and bad performance. </p>
+		<p>So, we have created owner <b>dexp_menu</b> module to avoid problem above. <b>dexp_menu</b> is a mega menu which using bootstrap 3.x which helping create a mega menu with high performance when loading.</p>
+		
+		<p> Pressa theme, the menu at header region is located at http://yoursite.com/admin/structure/menu/manage/main-menu. 
+		</p>
+	</section>
+	
+	<section id="using_mega_menu">
+		<h6><strong>2. How to create a mega menu</strong></h6>
+		<p>
+			To make a menu item become mega (can be divide into columns, can be load block...), from this menu item you follow steps as below:
+		</p>
+		<ol>
+			<li>
+				Create a child menu item is a container of sub-items with path is <strong>&lt;container&gt;</strong>. 
+				To set width for this container add more parameter after &lt;container&gt;. <br/>Ex: &lt;container&gt;/500 will create a container with width 500px
+				<p><img src='assets/images/container-mega-menu.png' style="border:solid 1px #ddd"></p>
+			</li>
+			<li>
+				Create a child menu item of container is a row with path is <strong>&lt;row&gt;</strong>
+				<p><img src='assets/images/row-mega-menu.png' style="border:solid 1px #ddd"></p>
+			</li>
+			<li>
+				Create child menu items to contain sub-items with path is <strong>&lt;col&gt;</strong>/{2,3,4,6}
+				<br/>
+				Ex: <col>/4 => create a column width 4/12 in bootstrap
+				<p><img src='assets/images/col-mega-menu.png' style="border:solid 1px #ddd"></p>
+			</li>
+		</ol>
+		<p>
+			To assign a block into menu item, choose a block from block list in Attach Block field set at bottom page when creating or editing menu item. See screen shot:
+		</p>
+		<p ><img src='assets/images/attach-block.png' style="border:solid 1px #ddd"></p>
+		<p>
+			To display a icon Font-Awesome before menu item, put a class into <b>Link-Icon</b> text-field when creating or editing menu item. Ex: fa-home...
+		</p>
+		<p ><img src='assets/images/menu-icon.png' style="border:solid 1px #ddd"></p>
+	</section> <!-- End Using Mega Menu section !-->	
+</section>
+		<!-- Section slider -->
+		<section id="slider_configuration">
+	<div class="page-header"><h3>Slider configuration</h3><hr class="notop"></div>
+	<section id="make_slider">
+		<h5><strong>1. How to make and export a slider</strong><h5>
+		<p><b>dexp_layer_slider</b> is owner module let you create awesome slide in just few steps </p>
+		<p>
+		Please follow this video to make a slider <a href="https://www.youtube.com/watch?v=2-km9lH9-Ss">https://www.youtube.com/watch?v=2-km9lH9-Ss</a>
+		</p>
+	</section>	
+	<section id="import_slide">
+		<h5><strong>2. How to import exist slider</strong><h5>
+		<p>Just go to Layer Slider -> Import Slide and input slider code into Import Code text area</p>
+		<p>All sliders code of Pressa theme is put on Packages folder with name has slider.txt. You just import it and modify to suite your requirements.</p>
+		<ul>
+			<li>home1_slider.txt</li>
+			<li>home3_slider.txt</li>
+			<li>home6_slider.txt</li>
+			<li>shop_slider.txt</li>
+		</ul>
+	</section>
+
+</section>
+	<!-- Section shortcode -->
+	<section id="using_shortcodes">
+	<div class="page-header"><h3>Pressa Shortcodes</h3><hr class="notop"></div>
+	<p>
+		When you write content for your website, chances are, you&rsquo;ll use a lot of the same <acronym>HTML</acronym> and <acronym>CSS</acronym> to include special functionality on specific pages. The problem is, repeating this code, day in and day out, can be tedious and prone to errors. Shortcodes are just that, short bits of code that cut down on repetitive strings of HTML, and can be inserted anywhere in your site.
+	</p>
+	<section id="enable_shortcode">
+	<h5><strong>Enable Shortcode</strong></h5>
+	<p>The available shortcodes can be activated by going to Configuration &#65515; Text Formats &#65515; Full HTML &#65515; Configure. Once here you need to enable the Shortcodes filter. This will enable the module filter to be able to setup available shortcodes.</p>
+	<p style="text-align:center">
+		<img src="assets/images/enable-shortcode.png"/> <br/>
+		<img src="assets/images/filter-shortcode.png"/>
+	</p>
+	<p>
+		The following shortcodes are included with Pressa theme. You can see shortcode demo at <a href="http://demo.themesvision.com/drupal/Pressa/">Shortcode Pressa demo</a> by accesing to <strong>Features </strong>menu item
+	</p>
+	</section>
+	<section id="accordion">
+		<ol start="2">
+			<li><strong>ACCORDION</strong></li>
+		</ol>
+		<p>
+			Accordion shortcode allows you to provide multiple panes and display them one at a time. We can create an accordion quickly by using syntax as below:
+		</p>
+		<pre class="prettyprint lang-html linenums">
+[accordions class="CLASS_WRAPPER"]
+[accordion title=&quot;TITLE_ITEM_1&quot; expand="TRUE|FALSE" class="CLASS_ITEM"]Content Item 1 here[/accordion]
+[accordion title=&quot;TITLE_ITEM_2&quot; expand="TRUE|FALSE" class="CLASS_ITEM"]Content Item 2 here[/accordion]
+[accordion title=&quot;TITLE_ITEM_{I}&quot; expand="TRUE|FALSE" class="CLASS_ITEM"]Content Item {I} here[/accordion]
+[/accordions]
+		</pre>
+		<p>
+		In Pressa theme, we pre-defined CLASS_WRAPPER can be:
+		<ul>
+			<li>default</li>
+			<li>style02</li>			
+		</ul>		
+		</p>
+		<p>
+			NOTE: - Default value of expand property is FALSE <br/>
+				  - You can define more than class if you want
+		</p>
+		<p>
+		<strong>You can reference to <a href="http://demo.themesvision.com/drupal/Pressa/feature/accordion-toggles">link</a> to view how shortcode display </strong> 
+		</p>
+	</section>
+	<section id="tabs">
+		<ol start="3">
+			<li><strong>TABS</strong></li>
+		</ol>
+		<p>
+			<strong>Tabs</strong> shortcode is used for structuring content with tabs (uses DIVs). Each tab has title and content. When certain tab is selected, its content is displayed. Each tab can have two states - selected and unselected. You can insert horizontal or vertical tabs.
+		</p>
+		<p>	We can create a tab quickly by using syntax as below:</p>
+		<pre class="prettyprint lang-html linenums">
+[tabs class=&quot;STYLE&quot;]
+[tab title=&quot;TITLE_ITEM_1&quot; icon=&quot;ICON_NAME_ITEM_1&quot;]Content Item 1 here[/tab]
+[tab title=&quot;TITLE_ITEM_2&quot; icon=&quot;ICON_NAME_ITEM_2&quot;]Content Item 2 here[/tab]
+[tab title=&quot;TITLE_ITEM_3&quot; icon=&quot;ICON_NAME_ITEM_3&quot;]Content Item 3 here[/tab]
+[/tabs]
+		</pre>
+		<p>	NOTE: STYLE can be one of values</p>
+		<ul>
+			<li>
+				horizontal</li>
+			<li>
+				vertical</li>			
+		</ul>
+		NOTE: icon is a valid class name from Font Awesome
+		<p>
+		<strong>You can reference to <a href="http://demo.themesvision.com/drupal/Pressa/feature/tabs">link</a> to view how shortcode display </strong> 
+		</p>
+	</section>
+	<section id="box">
+		<ol start="4">
+			<li><strong>BOX</strong></li>
+		</ol>
+
+		<p>We can create a featured box quickly by using syntax as below:</p>
+		<pre class="prettyprint lang-html linenums">
+[box align="center|left|right|top-left|top-right" border ="circle|none" background="yes|no" icon="ICON" title="TITLE" class=""]CONTENT HERE[/box]
+		</pre>
+		<ul class="line30">
+			<li><strong>align:</strong> center,left,right,top-left,top-right</li>
+			<li><strong>border:</strong> none (default),circle</li>
+			<li><strong>background:</strong> yes, no (default)</li>
+			<li><strong>icon:</strong> Font Awesome class</li>
+			<li><strong>class:</strong> your custom class</li>
+		</ul>
+		<p>
+		<strong>You can reference to <a href="http://demo.themesvision.com/drupal/Pressa/feature/box-icon">link</a> to view how shortcode display </strong> 
+		</p>
+	</section>
+	
+	<section id="piechart">
+		<ol start="5">
+			<li>
+				<strong>PIE CHART</strong></li>
+		</ol>
+		<p>
+		Pie chart bar displays status of a determinate or indeterminate process. We can create a pie chart quickly by using shortcode with syntax as below:</p>
+		<pre class="prettyprint lang-html linenums">
+[piegraph percent="PERCENT" title="TITLE"][/piegraph]
+		</pre>
+		Example:
+		<pre class="prettyprint lang-html linenums">
+[piegraph title='Graphic Design' percent='70' width='']Lorem ipsum dolor sit amet, consectetuer adipiscing[/piegraph]
+		</pre>
+		<p><strong>You can reference to <a href="http://demo.themesvision.com/drupal/Pressa/feature/pie-graph">link</a> to view how shortcode display </strong></p>
+	</section>
+	<section id="skillbar">
+		<ol start="6">
+			<li>
+				<strong>SKILL BAR</strong></li>
+		</ol>
+		Shortcode:
+		<pre class="prettyprint lang-html linenums">
+[skillbar percent='' class='']Title[/skillbar]
+		</pre>
+		<ul>
+			<li>
+				<strong>percent:</strong> 0 - 100</li>
+		</ul>
+		Class:
+		<ul>
+			<li>
+				Class of bootstrap http://bootstrapdocs.com/v3.1.1/docs/components/#progress</li>
+			<li>
+				has-label</li>
+		</ul>
+		Example:
+		<pre class="prettyprint lang-html linenums">
+[skillbar percent='90']WORDPRESS DEVELOPMENT[/skillbar]
+[skillbar percent='90' class="progress-striped"]WORDPRESS DEVELOPMENT[/skillbar]
+[skillbar percent='90' class="has-label"]Wordpress[/skillbar]
+[skillbar percent='90' class="progress-striped active"]WORDPRESS DEVELOPMENT[/skillbar]
+		</pre>
+		<p><strong>You can reference to <a href="http://demo.themesvision.com/drupal/Pressa/feature/progress-bars">link</a> to view how shortcode</strong>display</p> 
+	</section>
+
+	<section id="carousels">
+		<ol start="7">
+			<li>
+				<strong>Carousels</strong></li>
+		</ol>
+		<p>
+			The carousels are a dynamic presentation of contents where text and images are made visible or accessible to the user by cycling through several items.&nbsp; We can create a carousels bar quickly by using shortcode with syntax as below:
+		</p>
+		<pre class="prettyprint lang-html linenums">
+[carousels items="TOTAL_ITEM"]
+[carousel path=&quot;PATH_TO_IMAGE&quot; sequence="0"]CAPTION_HERE[/carousel]
+[carousel path=&quot;PATH_TO_IMAGE&quot; sequence="1"]CAPTION_HERE[/carousel]
+[carousel path=&quot;PATH_TO_IMAGE&quot; sequence="2"]CAPTION_HERE[/carousel]
+[/carousels]
+		</pre>
+		<p>
+			NOTE: path can be format: public://
+		</p>
+		<pre class="prettyprint lang-html linenums">
+[carousels items="3"]
+[carousel path="http://statics.drupalexp.com/Pressa/02_about.png" sequence="0"][/carousel]
+[carousel path="http://statics.drupalexp.com/Pressa/03_about.png" sequence="1"][/carousel]
+[carousel path="http://statics.drupalexp.com/Pressa/04_about.png" sequence="2"][/carousel]
+[/carousels]
+		</pre>
+	</section>
+	
+	<section id="icons">
+	<ol start="8">
+		<li>
+			<strong>Icons</strong></li>
+	</ol>
+	<p>
+		You can easily add any of built in icons from Font Awesome to your sites with our new icon shortcodes by using syntax:
+	</p>
+	<pre class="prettyprint lang-html linenums">
+[icon name=&quot;NAME&quot; link=&quot;URL&quot;]TEXT_HERE[/icon]
+	</pre>
+	<p>
+		NAME is a valid class name in font owesome</p>
+	<p>
+	Access to <a href="http://fortawesome.github.io/Font-Awesome/icons/">http://fortawesome.github.io/Font-Awesome/icons/</a> to get valid classes</p>
+	<p>Example: fa-adjust, fa-anchor...</p>
+	<p><strong>You can reference to <a href="http://demo.themesvision.com/drupal/Pressa/features/icon">link</a> to view how shortcode</strong>display</p> 
+	</section>
+	
+	<section id="button">
+		<ol start="9">
+			<li>
+				<strong>Button</strong></li>
+		</ol>
+		<p>
+			You can create beautiful buttons on the fly using the button shortcode. Choose between various colors, styles and sizes.&nbsp; We can create s button by using shortcode with syntax as below:</p>
+		<pre class="prettyprint lang-html linenums">
+[button size='lg|md|sm|xs' type='link|button' icon='AWESOME ICON' link='#' class='btn-default|btn-primary|btn-success|btn-info|btn-warning|btn-danger']Bottun Label[/button]</pre>		
+		<ul>
+			<li>AWESOME ICON from http://demo.themesvision.com/drupal/Pressa/features/icon</li>
+		</ul>
+	
+		<p>We have many button styles in Pressa theme are: Button outline, Button inline, flat button... by using classes such as: dexp-btn-reflect,dexp-btn-hover-flap, dexp-icon-right</p>
+		<p><strong>You can reference to <a href="http://demo.themesvision.com/drupal/Pressa/feature/buttons">link</a> to view how shortcode</strong>display</p> 
+	</section>
+	
+	<section id="stats">
+		<ol start="10">
+			<li><strong>Stats (js)</strong></li>
+		</ol>
+		<p>	You can create a statistics item to run by javascript by syntax:</p>
+		<pre class="prettyprint lang-html linenums">
+[stats icon='AWESOME_ICON' number='THE_NUMBER' class='CUSTOM CLASS'] TITLE [/stats]
+		</pre>
+		<ul>
+			<li>AWESOME ICON from http://demo.themevision.com/drupal/pressa/features/icon</li>
+			<li>CUSTOM CLASS: stats-white</li>
+		</ul>
+	</section>
+	
+	<section id="columns">
+		<ol start="11">
+			<li>
+				<strong>Column layout</strong></li>
+		</ol>
+		<p>
+		With the column layout shortcodes you can now break down your content into any number of advanced layouts giving variety and hierarchy. We can create column layout quickly by using shortcode with syntax as below:
+		</p>
+		<pre class="prettyprint lang-html linenums">
+[column cols=&quot;NUM_OF_COLS&quot; begin=&quot;0-OR-1&quot; end=&quot;0-OR-1&quot;]CONTENT HERE [/column]
+		</pre>
+		<ul>
+			<li>
+				begin = &quot;1&quot; indicates that it is the first column layout,</li>
+			<li>
+				end = &quot;1&quot; indicates that it is the last column layout</li>
+		</ul>
+		<p>Example:</p>
+		<p>- Shortcode of 2 columns (width = 1/2):&nbsp;</p>
+		<pre class="prettyprint lang-html linenums">
+[column cols=&quot;6&quot; begin=&quot;1&quot;]CONTENT HERE [/column]
+[column cols=&quot;6&quot; end=&quot;1&quot;]CONTENT HERE [/column]
+		</pre>
+
+		<p>- Shortcode of 3 columns (width = 1/3):&nbsp;</p>
+		<pre class="prettyprint lang-html linenums">
+[column cols=&quot;4&quot; begin=&quot;1&quot;]CONTENT HERE [/column]
+[column cols=&quot;4&quot;]CONTENT HERE [/column]
+[column cols=&quot;4&quot; end=&quot;1&quot;]CONTENT HERE [/column]
+		</pre>
+
+		<p>- Shortcode of 4 columns (width = 1/4):&nbsp;</p>
+		<pre class="prettyprint lang-html linenums">
+[column cols=&quot;3&quot; begin=&quot;1&quot;]CONTENT HERE [/column]
+[column cols=&quot;3&quot;]CONTENT HERE [/column]
+[column cols=&quot;3&quot;]CONTENT HERE [/column]
+[column cols=&quot;3&quot; end=&quot;1&quot;]CONTENT HERE [/column]
+		</pre>
+
+		<p>	- Shortcode of 2 columns (width = 1/4 and 3/4):</p>
+		<pre class="prettyprint lang-html linenums">
+[column cols=&quot;3&quot; begin=&quot;1&quot;]CONTENT HERE [/column]
+[column cols=&quot;9&quot; end=&quot;1&quot;]CONTENT HERE [/column]
+		</pre>
+	</section>
+	
+	<section id="bxslider">
+		<ol start="12">
+			<li>
+				<strong>Bx Slider</strong>
+			</li>
+		</ol>
+		<p>Shortcode:</p>
+		<pre class="prettyprint lang-html linenums">
+[bxslider auto='TRUE|FALSE' pager='TRUE|FALSE' control='TRUE|FALSE' min='MINIMUM ITEM TO DISPLAY' 
+max='MAXIMUM ITEM TO DISPLAY' move= 'NUMBER ITEM TO MOVE' width='ITEM WIDTH' margin='ITEM MARGIN'] 
+[bxitem] ITEM 1[/bxitem][bxitem] ITEM 2[/bxitem] [bxitem] ITEM 3[/bxitem]
+[/bxslider]
+		</pre>
+	</section>
+
+	<section id="map">
+		<ol start="13">
+			<li>
+				<strong>Map Shortcode</strong>
+			</li>
+		</ol>
+		<p>Shortcode:</p>
+		<pre class="prettyprint lang-html linenums">
+[maps zoom="14" type="color|standard" height="400px"]
+[marker image="IMAGE 01" title ="TITLE 01" link="#" phone="PHONE 01" latitude="LAT 01" longitude="LONG 01"]ADDRESS 01[/marker]
+[marker image="IMAGE 02" title ="TITLE 02" link="#" phone="PHONE 02" latitude="LAT 02" longitude="LONG 02"]ADDRESS 02[/marker]
+...
+[/maps]
+		</pre>
+		<p>
+			In Pressa theme, maps shortcode supports multiple markers so you can build your map with single maker or multi markers very easy.		
+		<p>
+		<p> Exampe:
+		<pre class="prettyprint lang-html linenums">
+[maps zoom="14" type="color" height="400px"]
+[marker image="http://statics.drupalexp.com/common/address1.jpg" title ="OFFICE 01" link="http://google.com.vn" phone="+90 555 666 77 88" latitude="-37.805575" longitude="145.082397"]167 Balwyn Rd, Balwyn VIC 3103, Australia[/marker]
+[marker image="http://statics.drupalexp.com/common/address2.jpg" title ="OFFICE 02" link="http://google.com.vn" phone="+90 555 666 77 88" latitude="-37.809255" longitude="145.091314"]73 Yarrbat Ave, Balwyn VIC 3103, Australia[/marker]
+[/maps]
+		</pre>	
+		</p>
+		<p><strong>You can reference to <a href="http://demo.themesvision.com/drupal/Pressa/feature/maps">link</a> to view how shortcode</strong> display</p>
+	</section>
+
+	<section id="testimonials">
+	<ol start="14">
+		<li>
+			<strong>Testimonials</strong>
+		</li>
+	</ol>
+	1. Normal Testimonials
+	<pre class="prettyprint lang-html linenums">
+[testimonial type="type01|type02" name="NAME" position="" sequence = "" image="" site="" rate="" class="CUSTOM CLASS"]CONTENT[/testimonial]
+	</pre>
+	<p>	CUSTOM CLASS: We provided some color classes following:</p>
+		<ul>
+			<li>
+				color</li>
+			<li>
+				color_62C462</li>	
+			<li>
+				color_FDB53F</li>	
+			<li>
+				color_C64955</li>	
+			<li>
+				color_712B83</li>					
+		</ul>
+	Example:
+	<pre class="prettyprint lang-html linenums">
+[testimonial type="type01" name="Hansom Rob" position="CEO" sequence = "0" image="http://statics.drupalexp.com/craft/Team-81.jpg" rate="4" site='www.chocofactory.com']Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/testimonial]
+[testimonial type="type02" name="Hansom Rob" position="CEO" sequence = "0" image="http://statics.drupalexp.com/craft/Team-81.jpg" rate="4" site='www.chocofactory.com' class="color"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/testimonial]
+	</pre>
+	2. BX Slider Testimonials
+	<pre class="prettyprint lang-html linenums">
+[testimonials total_items="ITEM COUNT" class="CUSTOM CLASS"]
+[testimonial type="TYPE" name="NAME" position="" sequence = "" image="" site="" rate="" class="CUSTOM CLASS"]CONTENT[/testimonial]
+[testimonial type="TYPE" name="NAME" position="" sequence = "" image="" site="" rate="" class="CUSTOM CLASS"]CONTENT[/testimonial]
+[testimonial type="TYPE" name="NAME" position="" sequence = "" image="" site="" rate="" class="CUSTOM CLASS"]CONTENT[/testimonial]
+[/testimonials]
+	</pre>
+	Example:
+	<pre class="prettyprint lang-html linenums">
+[testimonials total_items="3" class=""]
+[testimonial type="type02" name="Hansom Rob" position="CEO" sequence = "0" image="http://statics.drupalexp.com/craft/Team-81.jpg" rate="4" site='www.chocofactory.com' class="color"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [/testimonial]
+[testimonial type="type02" name="John Walker" position="Manager" sequence = "1" image="http://statics.drupalexp.com/craft/Team-61.jpg" rate="3" site="www.chocofactory.com" class="color_62C462"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/testimonial]
+[testimonial type="type02" name="Hansom Rob" position="CEO" sequence = "2" image="http://statics.drupalexp.com/craft/Team-41.jpg" rate='5' site="www.chocofactory.com" class="color_FDB53F"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/testimonial]
+[/testimonials]
+	</pre>
+	<p><strong>You can reference to <a href="http://demo.themesvision.com/drupal/Pressa/feature/testimonial">link</a> to view how shortcode</strong>display</p> 
+	</section>
+	
+	<section id="social">
+		<ol start="15">
+			<li>
+				<strong>Social</strong>
+			</li>
+		</ol>
+		<pre class="prettyprint lang-html linenums">
+[social class='' icon='' tooltip='' link='']TEXT_HERE[/social]
+		</pre>
+		Example:
+		<pre class="prettyprint lang-html linenums">
+[social icon ='fa fa-facebook' class='' link='#'][/social]
+[social icon ='fa fa-google-plus' class='' link='#'][/social]
+[social icon ='fa fa-twitter' class='' link='#'][/social]
+		</pre>
+		<p><strong>You can reference to <a href="http://demo.themesvision.com/drupal/Pressa/feature/social-icon">link</a> to view how shortcode</strong>display</p> 
+	</section>
+
+	<section id="title">
+		<ol start="16">
+			<li>
+				<strong>Title</strong>
+			</li>
+		</ol>
+		<pre class="prettyprint lang-html linenums">
+[title class=""]Content title[title]
+		</pre>
+		<p>
+		NOTE: If you want to use sub title in title. Put "~" character to split.
+		</p>
+	</section>
+
+	<section id="media">
+		<ol start="17">
+			<li>
+				<strong>Media</strong>
+			</li>
+		</ol>
+		<pre class="prettyprint lang-html linenums">
+[video type ="youtube|vimeo" ratio="" video_id="" class="" width="" height=""][/video]
+		</pre>
+Example:
+		<pre class="prettyprint lang-html linenums">
+[video type ="youtube" ratio="" video_id="znK652H6yQM" class="text-center"][/video]
+		</pre>
+		<p><strong>You can reference to <a href="http://demo.themesvision.com/drupal/Pressa/feature/media">link</a> to view how shortcode</strong>display</p> 
+	</section>	
+</section>
+<section id="flipbox">
+		<ol start="18">
+			<li>
+				<strong>Flipbox</strong>
+			</li>
+		</ol>
+		<pre class="prettyprint lang-html linenums">
+[flipbox type='icon OR img' icon='FONT AWESOME CLASS' image='IMAGE_PATH' title='']Content[/flipbox]
+		</pre>
+Example:
+		<pre class="prettyprint lang-html linenums">
+[flipbox type='icon' icon='fa fa-file-code-o fa-4x' image='' title='Flip Box']Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet erat quis nibh vehicula, condimentum placerat lectus iaculis. Nam ultricies nisi vel ligula pulvinar, quis dapibus velit iaculis. In hac habitasse platea dictumst[/flipbox]
+[flipbox type='icon' icon='fa fa-file-code-o fa-4x' image='' title='Flip Box']Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet erat quis nibh vehicula, condimentum placerat lectus iaculis. Nam ultricies nisi vel ligula pulvinar, quis dapibus velit iaculis. In hac habitasse platea dictumst[/flipbox]
+		</pre>
+		<p><strong>You can reference to <a href="http://demo.themesvision.com/drupal/Pressa/feature/flipbox">link</a> to view how shortcode</strong>display</p> 
+	</section>	
+</section>
+		<!-- Section Block setting-->
+		<section id="block_configuration">
+	<div class="page-header"><h3>Drupalexp Block</h3><hr class="notop"></div>
+<p>
+	The Drupalexp Block module allows any block in the system to utilise color background and animate the content using CSS3 animations</p>
+
+	<div>
+		<div style="width:30%;float:left;">
+			<h5>Block Animation</h5>
+		<ul>	
+			<li><strong>Appears animate: </strong> effect when show block content. It can be: fadeIn, fadeOut, SlideInLeft, SlideInRight...</li>
+			<li><strong>Background image:</strong> choose a image to set background for block</li>
+			<li><strong>Background image type:</strong> it can be Default or Parallax. When choosing parralax, the image background will appear with parallax effect.</li>
+		</ul>
+		</div>
+		
+		<div style='width:70%;float:left;margin-top:-10px;'>
+		<img src='assets/images/block-animation-settings.png'/>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<p></p>
+	<div>
+		<div style="width:30%;float:left;">
+			<h5>Block Custom Style</h5>
+		<ul>	
+			<li><strong>Text align: </strong> alignment block content, it can be left, right or center</li>
+			<li><strong>Padding:</strong> set padding content in block </li>
+			<li><strong>Margin:</strong> set margin block with other elements</li>
+			<li><strong>Custom block content class:</strong> you can define owner class to customize your block</li>
+		</ul>
+		</div>
+		
+		<div style='width:70%;float:left;margin-top:-10px;'>
+		<img src='assets/images/block-style-settings.png'/>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<p></p>
+	<div>
+		<div style="width:30%;float:left;">
+			<h5>Responsive Settings</h5>
+		<p>This setting provides the ability to visibility block belong to devices. (different size)</p>
+		</div>
+		
+		<div style='width:70%;float:left;margin-top:-10px;'>
+		<img src='assets/images/block-responsive-settings.png'/>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+<p>
+	
+</section>
+
+<section id="blog_configuration">
+	<div class="page-header"><h3>Blog</h3><hr class="notop"></div>
+<p>
+	All blogs post in Pressa theme is shown from <b>article</b> content type.
+</p>
+<p>
+	When installing Pressa theme, 3 views: <strong>Blog, Blog Categories, Blog Tags </strong>are available to use.
+</p>
+	<section id="blog_fields">
+	<h6>1. Article content type fields:</h6>
+<ul class="line30">
+	<li><b>Blog Categories</b>: is used for reclassify blog posts</li>
+	<li><b>Media</b>: You can use any media type in blog such as
+	<ul>	
+		<li>Image, mp4, mp3 on local site </li>
+		<li>Video from Vimeo or Youtube resource </li>
+		<li>Audio from Soundcloud resource</li>
+	</ul></li>
+	<li><b>Types</b>: a list contain values: Normal, Photo, Video, Audo and Quote </li>
+	<li>Tags</li>
+	<li>Body</li>
+</ul>
+	</section>
+	<section id="blog_display">
+	<h6>2. Blog displays</h6>
+	<p> To manage blog display, go to <strong>Structure &#65515; Content types &#65515; Article  &#65515; Manage Display</strong> menu to see all display in blog.</strong></p>
+	<p>
+	<ul class="line30">	
+		<li>Teaser</li>
+		<li>Teaser Alt</li>
+		<li>Grid</li>
+		<li>Teaser Grid Alt</li>
+		<li>Timeline</li>
+	</ul>
+	</p>
+	</section>
+	<section id="blog_categories">
+	<h6>3. Manage Blog Categories</h6>
+<p> Additional, to manage blog categories, go to <strong>Structure &#65515; Taxonomy &#65515; Blog Categories </strong>menu to add new item or modify it.</strong></p>
+<p style="text-align:center">
+	<img src="assets/images/blog-categories.png"/>
+</p>
+</section>
+	<section id="blog_widgets">
+	<h6>4. Blog widgets</h6>
+	<p>
+		Some widgets is used in blog page
+		<ul class="line30">	
+			<li>Latest post</li>
+			<li>Blog Categories</li>
+			<li>Popular Post</li>
+			<li>Blog archive</li>
+		</ul>
+	</p>
+	</section>
+</section>
+<!-- Section Portfolio setting-->
+		<section id="portfolio_configuration">
+	<div class="page-header"><h3>Drupalexp Portfolio</h3><hr class="notop"></div>
+	<p>The <strong>dexp_portfolio</strong> module allow you create many different portfolio pages by changing settings quickly and easily. It provides an excellent starting point for those who want to build a portfolio.</p>
+	
+	<p style="text-align:center;">
+		<img src="assets/images/portfolio-view.png"/>
+	</p>
+	<p style="text-align:center;">Portfolio view</p>
+	<section id="portfolio_display">
+	<h6>1. Portfolio displays:</h6>
+	<p>Pressa theme provides 4 view modes for display portfolio</p>
+	<ul class="line30">
+		<li><b>Portfolio Grid</b>: display images with columns <b> NOT same size</b>. You can choose 2,3 or 4 columns or define more column if needed. See <a href="http://demo.themesvision.com/drupal/Pressa/portfolio/grid-3-columns">Portfolio Grid demo</a> page
+		</li>
+		<li><b>Portfolio Classic</b>: display images with rows, columns and <b>same size</b>. You can choose 2,3 or 4 columns or define more column if needed. See <a href="http://demo.themesvision.com/drupal/Pressa/portfolio">Portfolio Classic demo</a> page
+		</li>
+		<li><b>Portfolio Masonry</b>: You can arrange images by changing width, height of image visually. See <a href="http://demo.themesvision.com/drupal/Pressa/portfolio/masonry">Portfolio Classic demo</a> page 
+		</li>
+		<li><b>Portfolio Text</b>: Show images + text such as title, description... See <a href="http://demo.themesvision.com/drupal/Pressa/portfolio/text-3-columns">Portfolio Text demo</a> page
+		</li>
+	</ul>
+	</section>
+	<section id="portfolio_categories">
+	<h6>2. Manage portfolio categories:</h6>
+	<p> 
+	Portfolio catetories is using to filter portfolio. To manage portfolio categories, go to <strong>Structure &#65515; Taxonomy &#65515; Portfolio Categories </strong>menu to add new item or modify it. 
+	</p>
+	<p style="text-align:center">
+		<img src="assets/images/portfolio-categories.png"/>
+	</p>
+	</section>
+	<section id="portfolio_color_config">
+	<h6>3. Configure color hover portfolio images:</h6>
+	<p>
+	Also, you can input hexa color code when creating or modifying portfolio category. It means all portfolios same category will be have same color when hover image.
+	</p>
+	<p style="text-align:center">
+		<img src="assets/images/color-portfolio.png"/>
+	</p>
+	</section>
+	<section id="portfolio_sort">
+	<h6>4. Configure to show/hide sort portfolio dropdown</h6>
+	<p>To show/hide sort portfolio dropdown in portfolio pages/block, just check/uncheck on Enable Sort when clicking on Settings link </p>
+	<p style="text-align:center">
+		<img src="assets/images/sort-portfolio.png"/>
+	</p>
+	</section>
+</section>
+<section id="drupal_commerce">
+	<div class="page-header"><h3>Drupal Commerce</h3><hr class="notop"></div>
+	<p>
+	Pressa is using <b>drupal commerce</b> combine with <b>search API/ Facet API </b>to build a power shop which suitable for all sizes. It's very friendly to end user and flexible for manager website.
+	</p>
+	<p>To work with Drupal commerce, you should understand clearly concept <b>Product Display</b> and <b>Product variations</b> in Drupal commerce before. So, we strongly recommend you read <a href="http://www.drupalcommerce.org/user-guide/products">Product document </a> before continuing.</p>
+	<p>You can reference to <a href="http://www.drupalcommerce.org/user-guide"> Drupal Commerce</a> to learn more about commerce</p>
+	<section id="commerce_modules">
+		<h4>Commerce modules</h4>
+		<p>
+		If you want to apply Pressa shop to your <b>exist</b> site, just install and enable dexp_pressa_commerce module package. System will install some modules is required:
+			<ul>
+				<li>Commerce 7.x-</li>
+				<li>Rules 7.x-</li>
+				<li>Address Field 7.x-</li>
+			</ul>
+		</p>
+		<p>
+			And some related modules  
+			<ul>
+				<li>inline Entity Form 7.x-</li>
+				<li>search_api 7.x-</li>
+				<li>search_api_db 7.x-</li>
+				<li>search_facet_api 7.x-</li>
+				<li>facet_api 7.x-</li>
+				<li>shipping 7.x-</li>
+				<li>customer 7.x-</li>
+				<li>fivestar 7.x-</li>
+				<li>votingAPI 7.x-</li>
+				<li>....</li>
+			</ul>
+		</p>
+		<p>
+			And create product views, rules sale off automatically.
+		</p>
+	</section>
+	
+	<section id="Orane_shop">
+		<h4>Pressa Product structure</h4>
+		
+		<h5>1. Product entity and Product Display content type</h5>
+		<p>Pressa is a clothes shop in demo, but you can easily build any shop type which you want.</p>
+		<p>
+			When you installed and enabled Drupal Commerce, a entity called <b>Product </b>is available, you can see it in Store >> Products >> Product with basic field such as: title, SKU, status. <br/>
+			In Pressa shop, we add more properties to product entity.
+			<ul class="line30">
+				
+				<li>Product Images</li>
+				<li>Product Price</li>
+				<li>Product Size</li>
+				<li><b>Product Color: </b>It is a term reference, you can access to http://yoursiteurl.com/admin/structure/taxonomy/product_color to add/modify color. </li>
+				<li><b>Characteristics:</b> It is a term reference used for mark product with value such as: New, Featured, HOT... You can access to http://yoursiteurl.com/admin/structure/taxonomy/product_characteristics to add more value or modify them.</li>
+				<li><b>Sale Event:</b> It is a taxonomy, user can define more discount rule and apply to products.</li>
+			</ul>
+			<p>It's up to your shop. You can add/remove more fields to meet your requirement when building properties for product.</p>
+			<p>We have created a <b>product display</b> content type to show products with some additional fields:</p>
+			<ul class="line30">
+				<li><b>Product variations: </b> It is product reference </li>
+				<li><b>Product Catelog:</b> It is used for classifying product such as categories. It is also term reference, so you can create sub category if you want. You can access to http://yoursiteurl.com/admin/structure/taxonomy/product_category to add more value or modify them</li>
+				<li><b>Product Brand:</b> It is a taxonomy, You can access to http://yoursiteurl.com/admin/structure/taxonomy/product_brand  to add more value or modify them.</li>
+				<li><b>Product Availability:</b> It is a taxonomy, You can access to http://yoursiteurl.com/admin/structure/taxonomy/product_availability  to add more value or modify them.</li>
+				<li><b>Product Rating:</b> It allows user rating a product. We used Fivestar module to do this function</li>
+			</ul>
+		</p>
+		<h5>2. Configure Server search/index: </h5>
+		<p>Pressa theme is using Search API and Facet API to search/index product. All information about search api at link: http://yoursiteurl.com/admin/config/search/search_api</p>
+		<h6>Create Search server: </h6>
+		<p>If server search NOT exist, click on Add server link to create a new server.</p>
+		<h6>Create indexing: </h6>
+		<p>Pressa is using search_api_db to index data into database. You can use Apache Solr instead of database. With commerce_search and commerce_search_api system will create index for Product Display content type automatically. So, we can index and search on this content.  </p>
+		<h5>3. Demo Pressa shop using Drupal Commerce </h5>
+	</section>
+	
+	<section id="widget_product">
+		<h4>Widgets Product</h4>
+		<p>Pressa shop comes with some useful widgets block. It is usually use in commerce websites such as:</p>
+		<ul>
+			<li><b>Top Rating</b>: a block view to show products with average user rating from high to low</li>
+			<li><b>Bestseller</b>: a block view to show products best seller</li>
+		</ul>
+	</section>
+</section>
+<!-- Section Thank you-->	
+<section id="thank_you">
+<h4>Thank you</h4>
+Thank you for purchasing the Pressa theme. If you have any issues or feedback please <a href="http://themesvision.com/forum">contact us</a> or via our Themeforest author page.
+</section>	
+	</div>
+</body>
+</html>

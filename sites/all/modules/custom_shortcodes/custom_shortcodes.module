@@ -5,37 +5,35 @@
 * See comments below for explanation
 */
 function custom_shortcodes_shortcode_info() {
-
-$shortcodes['buttona'] = array(
+    $shortcodes['buttona'] = array(
 'title' => t('Link Button'),  // The title of this shortcode, displayed in the Drupal backend for administrators to enable/disable shortcodes for input types
 'description' => t('A simple button.'),  // Description shown along with the title in the Drupal backend
 'process callback' => 'custom_shortcodes_shortcode_buttona', // Custom function that deals with the variables and html output
 'tips callback' => 'custom_shortcodes_shortcode_buttona_tip' // Custom function that displays some help text to the user
-);
+    );
 
-// $shortcodes['second_shortcode'] = array();
-// $shortcodes['third_shortcode'] = array();
-// and so on...
+    $shortcodes['geoip'] = array(
+        'title' => t('GeoIP'),  // The title of this shortcode, displayed in the Drupal backend for administrators to enable/disable shortcodes for input types
+        'description' => t('GeoIP info.'),  // Description shown along with the title in the Drupal backend
+        'process callback' => 'custom_shortcodes_shortcode_geoip', // Custom function that deals with the variables and html output
+        'tips callback' => 'custom_shortcodes_shortcode_geoip_tip' // Custom function that displays some help text to the user
+    );
 
-return $shortcodes;
+    return $shortcodes;
 }
 
 /**
 * Define our variables (parameters) for each shortcode
 */
 function custom_shortcodes_theme() {
-return array(
-'shortcode_buttona' => array(
-'variables' => array('text' => '', 'link' => ''),
-),
-// 'second_shortcode' => array(),
-// 'third_shortcode' => array(),
-// and so on...
-);
+    return array(
+    'shortcode_buttona' => array('variables' => array('text' => '', 'link' => '')),
+        'shortcode_geoip' => array(),
+        );
 }
 
 /**
-* Define our process callback function for our [button] shortcode. This
+* Define our process callback function for our [buttona] shortcode. This
 * takes in our shortcode attributes from the shortcode and if empty, sets the property
 * to the default value stated in this function.  We then pass in our attributes to the
 * theme() function which outputs the HTML.
@@ -45,35 +43,65 @@ return array(
 * ),
 */
 function custom_shortcodes_shortcode_buttona($attrs, $text) {
-$attrs = shortcode_attrs(array(
-'link' => 'http://mywebsite.com'
-),
-$attrs
-);
-
-return theme('shortcode_buttona', array('link' => $attrs['link'], 'text' => $text));
+    $attrs = shortcode_attrs(array(
+        'link' => 'http://mywebsite.com'
+    ),
+    $attrs
+    );
+    return theme('shortcode_buttona', array('link' => $attrs['link'], 'text' => $text));
 }
 
 /**
 * This function uses the attributes passed in to return the HTML of this shortcode.
 */
 function theme_shortcode_buttona($vars) {
-return '<div class="buttona"><a href="' . $vars['link'] . '">' . $vars['text'] . '</a></div>';
+    return '<div class="buttona"><a href="' . $vars['link'] . '">' . $vars['text'] . '</a></div>';
 }
 
 /**
-* This function outputs some tips to the user beneath the WYSIWYG editor so they know
-* what the shortcode does and how to use it.
-*/
+ * This function outputs some tips to the user beneath the WYSIWYG editor so they know
+ * what the shortcode does and how to use it.
+ */
 function custom_shortcodes_shortcode_buttona_tip($format, $long) {
-$output = array();
-$output[] = '<p><strong>' . t('[buttona link="http://URLhere.com"]text[/buttona]') . '</strong> ';
+    $output = array();
+    $output[] = '<p><strong>' . t('[buttona link="http://URLhere.com"]text[/buttona]') . '</strong> ';
     if ($long) {
-    $output[] = t('Outputs text that is displayed as a button, which links to a specified URL.') . '</p>';
-}
-else {
-$output[] = t('Outputs text that links to a URL.') . '</p>';
+        $output[] = t('Outputs text that is displayed as a button, which links to a specified URL.') . '</p>';
+    } else {
+        $output[] = t('Outputs text that links to a URL.') . '</p>';
+    }
+
+    return implode(' ', $output);
 }
 
-return implode(' ', $output);
+function custom_shortcodes_shortcode_geoip($attrs, $text) {
+    return theme('shortcode_geoip');
+}
+
+/**
+ * Display GeoIP info
+ */
+function theme_shortcode_geoip($vars) {
+    $user_ip = getenv('REMOTE_ADDR');
+    $geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$user_ip"));
+    $city = $geo["geoplugin_city"];
+    $region = $geo["geoplugin_regionName"];
+    $country = $geo["geoplugin_countryName"];
+    $out = '<p class="geoIP">City: ' . $city;
+    $out .= ' Region: ' . $region;
+    $out .= ' Country: ' . $country . "</p>";
+    $out .= ' IP: ' . $user_ip;
+    return $out;
+}
+
+function custom_shortcodes_shortcode_geoip_tip($format, $long) {
+    $output = array();
+    $output[] = '<p><strong>' . t('[geoip]text[/geoip]') . '</strong> ';
+    if ($long) {
+        $output[] = t('Outputs GeoIP info.') . '</p>';
+    } else {
+        $output[] = t('Outputs GeoIP info.') . '</p>';
+    }
+
+    return implode(' ', $output);
 }

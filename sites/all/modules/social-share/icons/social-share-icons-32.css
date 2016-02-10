@@ -80,6 +80,14 @@ a.social-share-orkut {
   background: transparent url(iconpack-32.png) no-repeat -256px 0;
 }
 
+a.social-share-pinterest {
+  display: block;
+  height: 32px;
+  width: 32px;
+  text-indent: -9999px;
+  background: transparent url(iconpack-32.png) no-repeat -256px 0;
+}
+
 a.social-share-reddit {
   display: block;
   height: 32px;
